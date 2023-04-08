@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="header.css">
+    <title>Document</title>
+</head>
+<body>
+   <!-- ===========header========= -->
+    
+   <header>
+    <div class="navbar">
+        <div><a href="./home.html" class="logo">NewBeginning</a></div>
+        <ul class="links">
+            <li><a href="./home.html">HOME</a></li>
+            <li><a href="#about-us">ABOUT US</a></li>
+            <li><a href="./opportunity.html">OPPORTUNITIES</a></li>
+            <li><a href="./contactdaretobe.html">CONTACT US</a></li>
+        </ul>
+        <div class="not-show">
+            <a href="C:\Users\Kouti Divine\Desktop\Dare-to-be-challenge-WTM-\actual code\sign.html" class=" action-btn">Get Started</a>
+        </div>
+        
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="dropdown">
+        <ul><li><a href="./home.html">HOME</a></li>
+            <li><a href="#about-us">ABOUT US</a></li>
+            <li><a href="./opportunity.html">OPPORTUNITIES</a></li>
+            <li><a href="./contactdaretobe.html">CONTACT US</a></li>
+            <li><a href="C:\Users\Kouti Divine\Desktop\Dare-to-be-challenge-WTM-\actual code\sign.html" class="action-btn">Get Started</a></li></ul>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdownMen = document.querySelector('.dropdown')
+        toggleBtn.onclick = function (){
+            dropdownMen.classList.toggle('open');
+            const isOpen = dropdownMen.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+</header>
+</body>
+</html>

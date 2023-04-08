@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css/sign.css">
+    <link rel="stylesheet" href="styles.css/header.css">
+</head>
+<body>
+   <!-- ===========header========= -->
+    
+   <header>
+    <div class="navbar">
+        <a href="./home.html" class="logo">NewBeginning</a>
+        <ul class="links">
+            <li><a href="./home.html">HOME</a></li>
+            <li><a href="./home.html">ABOUT US</a></li>
+            <li><a href="./home.html">OPPORTUNITIES</a></li>
+            <li><a href="./contactdaretobe.html">CONTACT US</a></li>
+        </ul>
+        <div class="not-show"><a href="C:\Users\Kouti Divine\Desktop\Dare-to-be-challenge-WTM-\actual code\sign.html" class="action-btn">Get Started</a></div>
+        
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="dropdown">
+        <ul><li><a href="./home.html">HOME</a></li>
+            <li><a href="#about-us">ABOUT US</a></li>
+            <li><a href="./opportunity.html">OPPORTUNITIES</a></li>
+            <li><a href="./contactdaretobe.html">CONTACT US</a></li>
+            <li><a href="C:\Users\Kouti Divine\Desktop\Dare-to-be-challenge-WTM-\actual code\sign.html" class="action-btn">Get Started</a></li></ul>
+    </div>
+</header>
+    <!-- ===============page================= -->
+    <div class="maine">
+        <div class="container" id="main">
+            <div class="sign-up">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>Or use your email for registration</p>
+                    <input type="text" name="txt" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="sign-in">
+                <form action="#">
+                    <h1>Sign In</h1>
+                    <div class="social-container">
+                        <a href="#" class=" social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>Or use your account</p>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <a href="#">Forgot your Password?</a>
+                    <button>Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-left">
+                        <h1>Welcome Back</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button id="signIn"> Sign In</button>
+                    </div>
+                    <div class="overlay-right">
+                        <h1>Hello, friend</h1>
+                        <p>Enter your  personal credits and starts your journey with us</p>
+                        <button id="signUp"> Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- =================/footer================= -->
+     <footer class="footer">
+        <div class="fot-cont">
+            <div class="row">
+                <div class="footer-col">
+                        <h4 style="margin:15px 0 0 40px;">Company</h4>
+                    <ul>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">opportunities</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <ul >
+                        <h4 style="margin:16px 0 ;">services</h4>
+                        <li><a href="#" class="footer__link">Research</a></li>
+                        <li><a href="#" class="footer__link">Implementation</a></li>
+                        <li><a href="#" class="footer__link">Development</a></li>
+                        <li><a href="#" class="footer__link">Join Us Today</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="margin:15px 0 0 40px;">Address</h4>
+                   
+                        <ul>
+                            <li>Buea - Cameroon</li>
+                            <li>New New Beginning</li>
+                            <li>+237 - 650 - 028 - 614</li>
+                            <li>newbeginings.stem@email.com</li>
+                          </ul>
+                   
+                </div>
+                    <div class="footer-col" style="margin: -15px 0  0 80px;">
+                        <h4>Follow Us</h4>
+                        <div class="socials">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                            <a href="#"> <i class="fab fa-twitter"></i></a>
+                            <a href="#"> <i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                   </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const main = document.getElementById('main');
+        
+        signUpButton.addEventListener('click', () =>{
+            main.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () =>{
+            main.classList.remove("right-panel-active");
+        });
+
+    </script>
+</body>
+</html>
